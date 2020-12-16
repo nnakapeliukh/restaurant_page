@@ -1,8 +1,7 @@
 import drawMainPage from './main-page.js';
-
-console.log("Loading started");
-
+import drawHomeTab from './home_tab.js';
 
 
-document.getElementById("content");
+
 drawMainPage.init();
+// drawHomeTab.init();

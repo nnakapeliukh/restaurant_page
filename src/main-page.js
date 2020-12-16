@@ -32,7 +32,13 @@ const drawMainPage = (() => {
                 menuBut.innerHTML = "MENU";
                 menuBut.className = 'nav-buttons';
 
+                //button contact us
+                const contactBut = document.createElement('button');
+                homeDiv.appendChild(contactBut);
+                contactBut.innerHTML = "Contact Us";
+                contactBut.className = 'nav-buttons';
 
+                //buttons styles
                 const allButtons = document.getElementsByClassName('nav-buttons');
                 for (let elem = 0; elem < allButtons.length; elem++){
                     allButtons.item(elem).style.display = 'inline-block';
@@ -42,13 +48,14 @@ const drawMainPage = (() => {
                     allButtons.item(elem).style.height = '60px';
                     allButtons.item(elem).style.width = '20%';
                     allButtons.item(elem).style.margin = '20px';
+                    allButtons.item(elem).style.borderRadius = "18px";
                 }
 
         //image
         const image = document.createElement('IMG');
         contentDiv.appendChild(image);
         contentDiv.style.background = 'url(../img/bbq.jpg)';
-        contentDiv.style.height = "100vh"
+        contentDiv.style.minHeight = "100vh"
         contentDiv.style.backgroundRepeat = 'no-repeat';
         contentDiv.style.backgroundAttachment = 'fixed';
         contentDiv.style.backgroundPosition = 'center center';
