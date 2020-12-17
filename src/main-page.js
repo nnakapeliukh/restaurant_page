@@ -25,18 +25,21 @@ const drawMainPage = (() => {
                 homeDiv.appendChild(homeBut);            
                 homeBut.innerHTML = 'HOME';
                 homeBut.className = 'nav-buttons';
-                
+                homeBut.id = 'home-but';
+
                 //button menu
                 const menuBut = document.createElement('button');
                 homeDiv.appendChild(menuBut);
                 menuBut.innerHTML = "MENU";
                 menuBut.className = 'nav-buttons';
+                menuBut.id = 'menu-but';
 
                 //button contact us
                 const contactBut = document.createElement('button');
                 homeDiv.appendChild(contactBut);
                 contactBut.innerHTML = "Contact Us";
                 contactBut.className = 'nav-buttons';
+                contactBut.id = 'contact-but';
 
                 //buttons styles
                 const allButtons = document.getElementsByClassName('nav-buttons');

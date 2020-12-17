@@ -26,7 +26,8 @@ const drawHomeTab = (() => {
             const textHomeTwo = document.createElement('p');
             tabDiv.appendChild(textHomeTwo);
             textHomeTwo.innerHTML = `Nam lobortis nunc eget ligula fermentum, et imperdiet neque dapibus. Sed nisi ex, eleifend a sapien sed, rhoncus condimentum odio. Proin non luctus dolor. Mauris cursus congue dictum. Ut pharetra sollicitudin arcu, nec efficitur eros commodo id. Nam ullamcorper sem nec nibh euismod, nec aliquet lorem rutrum. In et quam urna. Phasellus quis blandit mi. Fusce tincidunt urna quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent quam turpis, bibendum vitae dui vel, pretium mattis lacus.`
-    
+
+            return tabDiv;
         }
 
 
